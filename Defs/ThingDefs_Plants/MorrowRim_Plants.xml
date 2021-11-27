@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Wild Ash hay grass -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshHayGrassWild</defName>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<label>wild grazelands haygrass</label>
+		<description>A comparatively more resilient variation of haygrass, created by Great House Telvanni. The increase in durability allows the grass to survive ash storms, but also increases the time taken to harvest.</description>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshHayGrass</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.8</fertilitySensitivity>
+		  <fertilityMin>1.1</fertilityMin>
+		  <harvestWork>400</harvestWork>
+		  <growDays>7</growDays>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <maxMeshCount>4</maxMeshCount>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>Hay</harvestedThingDef>
+		  <harvestYield>18</harvestYield>
+		  <topWindExposure>0.1</topWindExposure>
+		  <visualSizeRange>0.3~0.8</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	<!-- Grazelands wickwheat -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_GrazelandsWickwheat</defName>
+		<label>giant wickwheat plant</label>
+		<description>A significantly larger version of wickwheat, only found growing in the wild in the grazelands.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_GrazelandsWickwheat</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.4</fertilitySensitivity>
+		  <fertilityMin>1.1</fertilityMin>
+		  <growDays>11.0</growDays>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <harvestedThingDef>MorrowRim_RawWickwheat</harvestedThingDef>
+		  <harvestYield>20</harvestYield>
+		  <topWindExposure>0.1</topWindExposure>
+		  <visualSizeRange>1.0~1.7</visualSizeRange>
+		  <immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_GrazelandsWickwheat</immatureGraphicPath>
+		  <wildOrder>2</wildOrder>
+		  <wildClusterRadius>2</wildClusterRadius>
+		  <wildClusterWeight>60</wildClusterWeight>
+		</plant>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FeatureDef>
+    <defName>MorrowRim_Grazelands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>444</order>
+     <rootBiomes>
+      <li>MorrowRim_Grazelands</li>
+    </rootBiomes>
+    <nameMaker>MorrowRim_NamerGrazelands</nameMaker>
+  </FeatureDef>
+
+</Defs>

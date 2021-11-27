@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Magical Menagerie</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra" or defName="MM_Chimera" or defName="MM_Griffin" or defName="MM_LesserWyvern" or defName="MM_Manticore"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Grazelands>0.01</MorrowRim_Grazelands>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
