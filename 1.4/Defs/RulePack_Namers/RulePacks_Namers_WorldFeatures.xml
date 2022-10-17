@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>MorrowRim_NamerGrazelands</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>terrain_word(p=4)->grazelands</li>
+			<li>terrain_word(p=4)->grazeland</li>
+			<li>terrain_word->savanna</li>
+			<li>terrain_word->plains</li>
+			<li>terrain_word->grassland</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

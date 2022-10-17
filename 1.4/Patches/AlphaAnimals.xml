@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add select alpha animals animals to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Grazelands>0.05</MorrowRim_Grazelands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Grazelands>0.2</MorrowRim_Grazelands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Grazelands>0.01</MorrowRim_Grazelands>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Barbslinger"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_Grazelands>0.01</MorrowRim_Grazelands>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
