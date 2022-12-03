@@ -10,7 +10,6 @@
 			<operations>
 
 				<li Class="PatchOperationAdd"> 
-					<success>Always</success>
 					<xpath>/Defs/VanillaPlantsExpanded.TillableTerrainDef[defName="VCE_AcceptedTillableTerrains"]/terrains</xpath>
 					<value>
 						<li>MorrowRim_AshySoil</li>
